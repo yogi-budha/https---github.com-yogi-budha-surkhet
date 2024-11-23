@@ -3,7 +3,9 @@
 function Footer() {
     return (
      <>
+
      <div className='px-96' id='Footer'>
+        <hr className="mt-11 bg-green-900"/>
         <div className='w-full flex gap-4  justify-between  mt-10 '>
       <div className='w-2/4 flex gap-2 flex-col '>
           <p className='font-semibold text-slate-950 text-sm tracking-wide '>WELCOME TO SURKHET</p>
