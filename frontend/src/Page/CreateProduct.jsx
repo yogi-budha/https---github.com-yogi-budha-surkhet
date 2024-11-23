@@ -23,7 +23,7 @@ function CreateProduct() {
 
       console.log(data)
 
-      axios.post(`${import.meta.env.VITE_backendUrl}api/product`,data).then((res)=>{
+      axios.post(`${import.meta.env.VITE_backendUrl}/api/product`,data).then((res)=>{
    if(res.data.success== true){
       toast(res.data.message)
     }
