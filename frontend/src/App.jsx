@@ -8,7 +8,7 @@ import LoginPopup from "./Components/LoginPopup"
 
 function App() {
 
-  const [showLogin, setShowLogin] = useState(false)
+  const [showLogin, setShowLogin] = useState(true)
   const [currState, setCurrState] = useState('Login')
 
   return (
