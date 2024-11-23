@@ -9,7 +9,7 @@ import imageRouter from './Router/image.router.js'
 import mongooseDB from './config/db.js'
 
 
-const PORTNAME = process.env.PORT
+const PORTNAME = process.env.PORT || 4000
 console.log(PORTNAME)
 const app = express()
 

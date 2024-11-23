@@ -18,7 +18,7 @@ function LoginPopup({setShowLogin,currState,setCurrState}) {
 
         if(currState == 'Login'){
 
-            axios.post(`${import.meta.env.VITE_backendUrl}/api/userlogin`,data).then((res)=>{
+            axios.post(`${import.meta.env.VITE_API_URL}/api/userlogin`,data).then((res)=>{
               
                 res.data.success ? toast(res.data.message) : toast(res.data.message)
                 localStorage.setItem('token',res.data.token)
@@ -28,7 +28,7 @@ function LoginPopup({setShowLogin,currState,setCurrState}) {
 
         if(currState == 'Sign up'){
 
-            axios.post(`${import.meta.env.VITE_backendUrl}/api/userRegister`,data).then((res)=>{
+            axios.post(`${import.meta.env.VITE_API_URL}/api/userRegister`,data).then((res)=>{
 
                 res.data.success ? toast(res.data.message) : toast(res.data.message)
                 localStorage.setItem('token',res.data.token)

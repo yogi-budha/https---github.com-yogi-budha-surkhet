@@ -11,8 +11,6 @@ function UpdateProduct() {
 
      const  navigate = useNavigate();
 
-     console.log(id)
-
 
     // const {value,setValue} = useContext(productsData)
 
@@ -31,12 +29,10 @@ function UpdateProduct() {
 
       e.preventDefault()
 
-      console.log({id,data})
 
    
 
-            axios.post(`${import.meta.env.VITE_backendUrl}/api/productupdate`,{id,data}).then((res)=>{
-                console.log(res)
+            axios.post(`${import.meta.env.VITE_API_URL}/api/productupdate`,{id,data}).then((res)=>{
 
                 if(res.data.success == true){
                     toast(res.data.message)
