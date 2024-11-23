@@ -24,7 +24,7 @@ function Gallery() {
 
         <h1 className='  m-10 text-blue-500 font-bold text-2xl' >Gallery</h1>
 
-        <div className=' w-full flex justify-between mb-3'>
+        <div className=' w-full flex justify-between mb-3 dark:text-slate-100'>
 
             {
                 categoryBy.map((category,i)=>(
@@ -38,7 +38,7 @@ function Gallery() {
          
         </div>
 
-        <div className='flex flex-wrap gap-4 justify-between items-center'>
+        <div className='flex flex-wrap gap-4 justify-between items-center '>
             {
                 
     image.map((images,i)=><Images key={i} image={images}/>)

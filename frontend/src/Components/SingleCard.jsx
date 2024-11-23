@@ -13,7 +13,7 @@ function SingleCard({name,image,description,id,value,setValue,removeCard}) {
 
 
   return (
-    <div className=' w-full h-[850px] bg-slate-200 dark:bg-slate-600 shadow-2xl hover:scale-105 hover:ease-in-out duration-1000 rounded-2xl p-6 '>
+    <div className=' w-full h-[850px] bg-slate-200 dark:bg-slate-600 shadow-2xl hover:scale-105 hover:ease-in-out duration-1000 rounded-2xl p-6 dark:text-slate-100 '>
       
       
 
