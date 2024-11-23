@@ -30,6 +30,16 @@ app.use("/api",userRoutes)
 app.use("/api",imageRouter)
 
 
+
+api.get("/",(req,res)=>{
+    res.send("hello world")
+})
+
+
+
+
+
+
 app.listen(PORTNAME,()=>{
     console.log("server Started successfully  hello")
 })
