@@ -21,7 +21,7 @@ export const ProductDataProvider = ({children})=>{
 
         try {
             
-            axios.get("http://localhost:4000/api/product").then((res)=>{
+            axios.get(`${import.meta.env.VITE_backendUrl}api/product`).then((res)=>{
                 const resData = res.data.product
 
                 setValue(resData)
@@ -39,7 +39,7 @@ export const ProductDataProvider = ({children})=>{
 
         try {
             
-            axios.get("http://localhost:4000/api/image").then((res)=>{
+            axios.get(`${import.meta.env.VITE_backendUrl}api/image`).then((res)=>{
                 const resData = res.data.image
 
                 console.log(res.data.image)
@@ -67,7 +67,7 @@ export const ProductDataProvider = ({children})=>{
   function removeCard(_id){
     try {
 
-        axios.post("http://localhost:4000/api/productdel",{_id}).then((res)=>{
+        axios.post(`${import.meta.env.VITE_backendUrl}api/productdel`,{_id}).then((res)=>{
 
          
 
@@ -95,7 +95,7 @@ function filterOut(category){
 
        
         
-        axios.post(`http://localhost:4000/api/image/${category}`).then((res)=>{
+        axios.post(`${import.meta.env.VITE_backendUrl}api/image/${category}`).then((res)=>{
          console.log(res)
 
          setImage(res.data.image)

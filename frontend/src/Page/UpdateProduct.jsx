@@ -35,7 +35,7 @@ function UpdateProduct() {
 
    
 
-            axios.post("http://localhost:4000/api/productupdate",{id,data}).then((res)=>{
+            axios.post(`${import.meta.env.VITE_backendUrl}api/productupdate`,{id,data}).then((res)=>{
                 console.log(res)
 
                 if(res.data.success == true){

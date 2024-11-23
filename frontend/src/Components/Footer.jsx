@@ -14,7 +14,7 @@ function Footer() {
       <div className='flex gap-3 justify-between w-2/4  '>
           <div className='flex flex-col gap-2'>
               <p className='font-semibold text-slate-950 text-sm '>GET HELP?</p>
-              <p className='text-slate-950  cursor-pointer text-xl'>How To Order?</p>
+              <p className='text-slate-950  cursor-pointer text-xl'>How To visit the Surkhet?</p>
               <p className='text-slate-950  cursor-pointer text-xl'>FAQs</p>
               <p className='text-slate-950  cursor-pointer text-xl'>Contact Us</p>
           </div>

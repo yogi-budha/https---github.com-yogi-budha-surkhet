@@ -12,7 +12,7 @@ function Images({image}) {
       <div className=' w-full h-full flex flex-col gap-1 justify-between' >
         <div className='w-full h-full overflow-hidden'>
 
-        <img className='  h-full object-cover  rounded-md  object-top'  src={`http://localhost:4000/uploads/${image.image}`} alt="" />
+        <img className='  h-full object-cover  rounded-md  object-top'  src={`${import.meta.env.VITE_backendUrl}uploads/${image.image}`} alt="" />
         </div>
        
         </div>

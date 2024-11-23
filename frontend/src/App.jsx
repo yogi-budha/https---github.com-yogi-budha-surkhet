@@ -10,6 +10,8 @@ function App() {
 
   const [showLogin, setShowLogin] = useState(false)
   const [currState, setCurrState] = useState('Login')
+
+  console.log(import.meta.env.VITE_backendUrl)
   return (
     <>
      {showLogin ? <LoginPopup setShowLogin={setShowLogin} currState={currState} setCurrState={setCurrState}/> : <></>}
