@@ -12,13 +12,13 @@ function App() {
   const [currState, setCurrState] = useState('Login')
 
   return (
-    <>
+    <div className="">
      {showLogin ? <LoginPopup setShowLogin={setShowLogin} currState={currState} setCurrState={setCurrState}/> : <></>}
-    <div className={`w-full min-h-screen bg-slate-300 dark:bg-slate-900 relative ${showLogin ? 'blur-sm overflow-y-hidden' : ''}`} >
+    <div className={`w-full min-h-screen bg-slate-300 dark:bg-slate-900  ${showLogin ? 'blur-sm overflow-y-hidden' : ''}`} >
      <Navbar setShowLogin={setShowLogin}  setCurrState={setCurrState}/>
       <Outlet />
     </div>
-    </>
+    </div>
    
   )
 }
