@@ -8,13 +8,13 @@ import LoginPopup from "./Components/LoginPopup"
 
 function App() {
 
-  const [showLogin, setShowLogin] = useState(true)
+  const [showLogin, setShowLogin] = useState(false)
   const [currState, setCurrState] = useState('Login')
 
   return (
     <>
      {showLogin ? <LoginPopup setShowLogin={setShowLogin} currState={currState} setCurrState={setCurrState}/> : <></>}
-    <div className="w-full min-h-screen bg-slate-300 dark:bg-slate-900 relative">
+    <div className={`w-full min-h-screen bg-slate-300 dark:bg-slate-900 relative ${showLogin ? 'blur-sm overflow-y-hidden' : ''}`} >
      <Navbar setShowLogin={setShowLogin}  setCurrState={setCurrState}/>
       <Outlet />
     </div>
